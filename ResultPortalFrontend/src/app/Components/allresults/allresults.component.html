@@ -1,0 +1,73 @@
+<body>
+<div *ngIf="errorpage">
+	<div id="divloginfail" class="alert alert-secondary" role="alert">
+	<h1 id="loginfailh1">ERROR:404 :(</h1>
+	<h4 id="loginfailh4">Sorry, the entered page does not exist</h4>
+	<form action="/student" method="get">
+	<button type="submit" class = "btn btn-warning" id="loginfailbutton" (click) = "logout()">HOME PAGE</button>
+	</form>
+	</div>
+</div>
+<div *ngIf="viewresults" id="divaddresult">
+	<form>
+		<button class="btn btn-primary" (click) = "addresult()" id="divaddresultbutton">ADD A RESULT</button>
+	</form>
+</div>
+
+<div *ngIf="viewresults" id="divlogoutbutton">
+	<form>
+		<button class="btn btn-secondary" id="logoutbutton" (click) = "logout()">Logout</button>
+	</form>
+</div>
+
+<div id="divtablepageheading" *ngIf="viewresults">
+	<h3 id="tablepageheading">
+	RESULTS
+	</h3>
+</div>
+
+<div *ngIf="viewresults" id="divtable">
+    <table class="table table-bordered" id="table">
+		<tr>
+		<th>
+		Roll Number
+		</th>
+		<th>
+		Name
+		</th>
+		<th>
+		Date Of Birth
+		</th>
+		<th>
+		Score
+		</th>
+		<th>
+		Actions
+		</th>
+		</tr>
+        <tr *ngFor = 'let student of results'>
+            <td>
+                {{student.id}}          
+            </td>
+            <td>
+                {{student.name}}
+            </td>
+            <td>
+                {{student.dob}}
+            </td>
+            <td>
+                {{student.score}}
+            </td>
+			<td>
+				<form>
+					<button type="submit" class="btn btn-info" id="editid" (click) = "editresult(student)">EDIT</button>
+				</form>
+				<form>
+					<button type="submit" class="btn btn-danger" id="deleteid" (click) = "delete(student)">DELETE</button>
+				</form>
+
+			</td>
+        </tr>
+		</table>
+</div>
+</body>

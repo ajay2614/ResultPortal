@@ -1,0 +1,68 @@
+<body>
+<div *ngIf="errorpage">
+	<div id="divloginfail" class="alert alert-secondary" role="alert">
+	<h1 id="loginfailh1">ERROR:404  :(</h1>
+	<h4 id="loginfailh4">Sorry, the entered page does not exist</h4>
+	<form action="/student" method="get">
+	<button type="submit" class = "btn btn-warning" id="loginfailbutton" (click) = "logout()">HOME PAGE</button>
+	</form>
+	</div>
+</div>
+
+<div *ngIf="viewaddresultform" id="divlogoutbutton">
+	<form>
+		<button class="btn btn-secondary" id="logoutbutton" (click) = "logout()">Logout</button>
+	</form>
+</div>
+
+<div id="resultform" *ngIf="viewaddresultform">
+    <h2 id="resultformheading">
+    ADD A NEW RESULT
+    </h2>
+</div>
+
+<div *ngIf="viewaddresultform" id="newresult">
+    <form>
+        <div class="form-group row" id="studentrollnumber">   
+            <div id="studentrollnumberlabel">
+                <h5>
+                    Roll Number
+                </h5>
+            </div>
+            <input type="number" name="studentid" id="inputstudentrollnumber" required [(ngModel)]="studentid">
+        </div>
+        <div class="form-group row" id="studentname">
+            <div id="studentnamelabel">
+                <h5>
+                    Name
+                </h5>
+            </div>
+            <input type="text" name="studentname" id="inputstudentname"required [(ngModel)]="studentname">
+        </div>
+        <div class="form-group row" id="studentdob">
+            <div id="studentdoblabel">
+                <h5>
+                    Birth Date
+                </h5>
+            </div>
+            <input type = "date" name="studentdob" id="inputstudentdob" required [(ngModel)]="studentdob">
+        </div>
+        <div class="form-group row" id="studentscores">
+            <div id="studentscoreslabel">
+                <h5>
+                    Scores
+                </h5>
+            </div>
+            <input type = "number" name="studentscores" id="inputstudentscores"required [(ngModel)]="studentscores">
+        </div>
+    <button type="button" id="resultsubmitbutton" class="btn btn-success" (click)="addresultForm()">Submit</button>
+    </form>
+</div>
+
+<div *ngIf="viewaddresultform" id="canceldiv">
+	<form>
+		<button (click) = "cancel()" class="btn btn-danger" id="cancelbutton">Cancel</button>
+	</form>
+</div>
+
+</body>

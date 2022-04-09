@@ -1,0 +1,30 @@
+<body>
+    <img src="../../../assets/Images/home11.JPG" id="img1">
+<div id="loginform">
+    <h2 id="loginformheading">
+            LOGIN FORM
+    </h2>
+</div>
+<div id="teacherlogin">
+<form #teacherlogin = "ngForm" (ngSubmit) = "loginTeacher(teacherlogin)">
+    <div class="form-group row" id="teacherusername">
+        <div id="teacherusernamelabel">
+            <h5>
+                USERNAME
+            </h5>
+        </div>
+      <input type="text" name="teacherid" id="inputteacherusername" ngModel>
+    </div>
+    <div class="form-group row" id="teacherpassword">
+        <div id="teacherpasswordlabel">
+            <h5>
+                PASSWORD
+            </h5>
+        </div>
+      <input type="password" name="password" id="inputteacherpassword" ngModel>
+    </div>
+    <button type="submit" id="buttonteacherlogin">SUBMIT</button>
+</form>
+</div>
+</body>
+ 

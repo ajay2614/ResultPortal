@@ -1,0 +1,125 @@
+body{
+    font-family: "Bahnschrift";
+    background-color: #EADEDA;
+}
+#divaddresult{
+	position:absolute;
+	margin-top:60px;
+}
+#divaddresultbutton{
+    border: 2px solid black;
+	margin-left:976px;
+	padding-left:30px;
+	padding-right:30px;
+	padding-top:10px;
+	padding-bottom:10px;
+    color: #0D1821;
+    background-color: #F0F8FF;
+    font-weight: bold;
+}
+#divaddresultbutton:hover{
+    background-color: #00FA9A;
+    color: black;
+    border: 2px solid black
+}
+
+#logoutbutton{
+	margin-top:10px;
+	text-align:right;
+}
+#divlogoutbutton{
+	margin-top:10px;
+    margin-right: 30px;
+	text-align:right;
+}
+#divtable{
+	margin-top:20px;
+	margin-left:100px;
+}
+
+#divtablepageheading{
+	margin-top:20px;
+	text-align:center;
+}
+
+#tablepageheading{
+	font-weight: bold;
+}
+
+#divtable{
+	margin-top:20px;
+	margin-left:100px;
+}
+
+.table{
+    table-layout: fixed;
+    width: 90%;
+    float: center;
+    margin-right: -30px;
+    margin-left: 5px;
+    border: 2px solid black;
+}
+
+.table th{
+    word-wrap: break-word;
+    background-color: #343148FF;
+    color:#D7C49EFF;
+    text-align: left;
+    border: 2px solid black;
+}
+.table td{
+    border: 2px solid black;
+    word-wrap: break-word;
+    background-color:#F5F5F5;
+}
+
+#editid{
+	padding-right:25px;
+	text-align:center;
+	padding-left:25px;
+}
+#deleteid{
+	padding-right:15px;
+	padding-left:15px;
+	position:absolute;
+	margin-left:100px;
+	margin-top:-38px;
+	text-align:right;
+}
+#editid:hover{
+    background-color: #00FA9A;
+    color: black;
+    border: 1px solid black   
+}
+#deleteid:hover{
+    background-color: red;
+    color: black;
+    border: 1px solid black
+}
+#logoutbutton:hover{
+    background-color: red;
+    color: black;
+    border: 1px solid black
+}
+#divloginfail{
+	height:300px;
+    background-color: #EADEDA;
+}
+
+#loginfailh1{
+	margin-top:30px;
+	margin-left:50px;
+	position:absolute;
+}
+#loginfailh4{
+	position:absolute;
+	margin-top:100px;
+	margin-left:50px;
+}
+#loginfailbutton{
+	position:absolute;
+	margin-top:160px;
+	margin-left:47px;
+	padding-left:10px;
+	padding-right:10px;
+}
