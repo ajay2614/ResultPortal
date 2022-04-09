@@ -1,0 +1,73 @@
+body{
+    font-family: "Bahnschrift";
+}
+#loginform{
+    background-color: darkgray;
+    color: black;
+    text-align: center;
+    position: absolute;
+    width:35%;
+    height: 50px;
+	border-left:2px solid black;
+    border-right:2px solid black;
+    border-top:2px solid black;
+    margin-left:400px;
+    margin-top: 104px;
+}
+#loginformheading{
+    margin-top: 5px;
+}
+#studentlogin{
+    position: absolute;
+    width:35%;
+	border:2px solid black;
+	margin-left:400px;
+	text-align:center;
+	background-color:#F5F5F5;
+	margin-top:150px;
+}
+#img1{
+    position: absolute;
+    border: 2px solid #2E294E;
+    height: 485px;
+    width: 1272px;
+    margin-left: 2px;
+    margin-top: 2px;
+    
+}
+#studentusername{
+    margin-top: 50px;
+}
+#inputstudentusername{
+	margin-left:220px;
+	margin-right:100px;
+}
+#studentusernamelabel{
+	position:absolute;
+	margin-top:8px;
+	margin-left:70px;
+}
+#studentpassword{
+    margin-top: 40px;
+}
+#inputstudentpassword{
+	margin-left:220px;
+	margin-right:100px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#studentpasswordlabel{
+	position:absolute;
+	margin-top:8px;
+	margin-left:70px;
+}
+#buttonstudentlogin{
+	margin-top:20px;
+	margin-bottom:15px;
+	margin-left:24px;
+}
+#buttonstudentlogin:hover{
+    background-color: #00FA9A;
+    color: black;
+    border: 2px solid black
+}
