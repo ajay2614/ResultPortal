@@ -1,0 +1,55 @@
+<body>
+<div *ngIf="errorpage">
+    Sorry, not able to find what you are looking for
+</div>
+
+<div *ngIf="viewstudentreport" id="divlogoutbutton">
+	<form>
+		<button class="btn btn-secondary" id="logoutbutton" (click) = "logout()">Logout</button>
+	</form>
+</div>
+
+<div id="resultform" *ngIf="viewstudentreport">
+    <h2 id="resultformheading">
+    STUDENT RESULT
+    </h2>
+</div>
+
+<div *ngIf="viewstudentreport" id="newresult">
+    <form>
+        <div class="form-group row" id="studentrollnumber">   
+            <div id="studentrollnumberlabel">
+                <h5>
+                    ROLL NUMBER
+                </h5>
+            </div>
+        <input value = "{{studentid}}" id="inputstudentrollnumber" readonly>
+        </div>
+        <div class="form-group row" id="studentname">
+            <div id="studentnamelabel">
+                <h5>
+                    Name
+                </h5>
+            </div>
+            <input value = "{{studentname}}" id="inputstudentname" readonly>
+        </div>
+        <div class="form-group row" id="studentdob">
+            <div id="studentdoblabel">
+                <h5>
+                    Birth Date
+                </h5>
+            </div>
+            <input value = "{{studentdob}}" id="inputstudentdob" readonly>
+        </div>
+        <div class="form-group row" id="studentscores">
+            <div id="studentscoreslabel">
+                <h5>
+                    Scores
+                </h5>
+            </div>
+        <input value = "{{studentscores}}" id="inputstudentscores" readonly>
+        </div>
+    </form>
+</div>
+</body>
+
